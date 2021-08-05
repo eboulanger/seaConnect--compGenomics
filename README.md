@@ -5,7 +5,7 @@ Codes for the paper "Climate differently influences genomic patterns of two symp
 
 ## Data
 GBS SNP calling was performed by [P. Guerrin using a dDocent-based pipeline](https://github.com/Grelot/seaConnect--dDocent)    
-SNP filtering, outlier detection and format conversions can be found in the project [seaConnect--dataPrep](https://github.com/eboulanger/seaConnect--dataPrep)      
+SNP filtering, outlier detection and format conversions was performed by [E. Boulanger in the project seaConnect--dataPrep](https://github.com/eboulanger/seaConnect--dataPrep)      
 
 
 ## Dependencies
@@ -28,7 +28,7 @@ adegenet, vegan, ggplot2, reshape2, pophelper, maps, mapdata, dplyr, plotrix, ..
 
 Infer population structure with DAPC from [adegenet](http://adegenet.r-forge.r-project.org/files/tutorial-dapc.pdf) using outlier (& putatively adaptive) SNPs.
 
-Interactive R-scripts `dip_dapc.R` and `mul_dapc.R
+Interactive R-scripts `dip_dapc.R` and `mul_dapc.R`
 This script runs two types of DAPC:  
 - with the Mediterranean ecoregions set as prior groups
 - with the detection of best-fit number of populations  
@@ -46,8 +46,8 @@ Environmental variables considered:
 - Sea Surface Salinity  
 - Sea Surface Temperature : separated winter and summer averages
 - Chlorophyll a levels as proxies for productivity
-- geographic distance: dbMEMs (x for _D. sargus__, x for _M. surmuletus_)  
-- larval connectivity: AEMs   (x for _D. sargus__, x for _M. surmuletus_)  
+- geographic distance: dbMEMs (x for _D. sargus_, x for _M. surmuletus_)  
+- larval connectivity: AEMs   (x for _D. sargus_, x for _M. surmuletus_)  
 
 We have too many potential explanatory variables so we use ordi2step to perform variable selection.
 - `run_rda_neutral|adaptive.R` : run RDA with previously selected dbMEMs and AEMs, as environmental variables
