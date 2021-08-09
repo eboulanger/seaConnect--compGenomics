@@ -43,14 +43,14 @@ Constrained ordination to infer if genetic structure is driven by certain
 environmental and spatial  variables & look for signals of local adaptation.
 
 Environmental variables considered:  
-- Sea Surface Salinity  
-- Sea Surface Temperature : separated winter and summer averages
-- Chlorophyll a levels as proxies for productivity
-- geographic distance: dbMEMs (x for _D. sargus_, x for _M. surmuletus_)  
-- larval connectivity: AEMs   (x for _D. sargus_, x for _M. surmuletus_)  
+- salinity  
+- temperature : separated winter and summer averages
+- chlorophyll a levels as proxies for productivity
+- geographic distance: dbMEMs (7 for _D. sargus_, 5 for _M. surmuletus_)  
+- larval connectivity: AEMs   (6 for both species)  
 
 We have too many potential explanatory variables so we use ordi2step to perform variable selection.
-- `run_rda_neutral|adaptive.R` : run RDA with previously selected dbMEMs and AEMs, as environmental variables
+- `run_rda_neutral|adaptive.R` : run RDA with previously selected dbMEMs and AEMs, and environmental variables
 
 ## 04-annotationVariant
 
